@@ -17,7 +17,7 @@ import { WidgetService } from './widget.service';
 })
 export class AppComponent {
   group = this.fb.group({
-    hello:new FormControl<any>("hello"),
+    hello:new FormControl<any>("hellos"),
     input:['234']
   })
   // hello = new FormControl(["Hello"]);
