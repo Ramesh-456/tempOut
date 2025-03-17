@@ -1,0 +1,6 @@
+{
+    "header":{
+        "name": "Bearer YOUR_API_KEY",
+        "value": "application/json"
+    }
+}

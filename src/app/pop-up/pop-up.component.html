@@ -1,0 +1,10 @@
+<div id="modal-container-element" style="position :fixed;height: 100vh;display: flex;justify-content: center;align-items: center;z-index: 3;top: 0;
+left: 0;
+width: 100%;background-color: rgba(0, 0, 0, 0.274);">
+<div [style.background]="color" id="popupElement">
+    <p>pop-up works!</p>
+    <h1>{{title}}</h1>
+    <h1>{{message}}</h1>
+    <button (click)="close()">Close</button>
+</div>
+</div>

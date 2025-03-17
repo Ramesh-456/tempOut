@@ -1,0 +1,6 @@
+{
+    "child":{
+        "name": "Bearer YOUR_API_KEY in child",
+        "value": "application/json in child"
+    }
+}

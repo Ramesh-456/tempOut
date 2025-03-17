@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+.shake{
+    animation-name:shake ;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes shake {
+    0% {
+            transform: translate(0px, 0px);
+        }
+    
+        25% {
+            transform: translate(2px, 0px);
+        }
+    
+        50% {
+            transform: translate(-2px, 0px);
+        }
+    
+        75% {
+            transform: translate(2px, 0px);
+        }
+    
+        100% {
+            transform: translate(0px, 0px);
+        }
+                            
+}
+#wave{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    inset: 0;
+}

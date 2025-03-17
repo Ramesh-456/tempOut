@@ -1,0 +1,5 @@
+ <!-- one through provider <b>{{service.value}}</b>
+<br>
+<button (click)="change()">Change service</button> -->
+
+<button *ngFor="let dat of data" (click)="dat.command()">{{dat.label}}</button>

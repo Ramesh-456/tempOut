@@ -1,0 +1,47 @@
+<!-- <ng-container [ngTemplateOutlet]="tempA" [ngTemplateOutletContext]="data">
+
+</ng-container>
+
+<ng-template #tempA let-datas="permission">
+    <app-comp-two [data]="datas"  >
+        <h1>Comp two</h1>
+    </app-comp-two>
+
+</ng-template>
+
+<ng-template #tempB let-datas="content">
+    <h1>Temp B</h1>
+    <h4>{{datas.color}}</h4>
+    <h4>{{datas.permission}}</h4>
+</ng-template> --> 
+<!-- 
+<div *appHasPermission="let datas=data;">
+    {{datas.canread}}
+    {{datas.canwrite}}
+</div> -->
+<!-- 
+<ng-template appHasPermission sampleData="hello" let-datass="data">
+   <div> hello</div>
+   <div> {{datass.canread}}</div>
+   <div> {{datass.canwrite}}</div>
+</ng-template> -->
+<app-comp-two [titleCard]="'Hello comp three'" >
+    <ng-template ramTemplate="sampleContent" >
+      <h1>Hello dsfsdf custom template</h1>
+    </ng-template> 
+
+    <ng-template ramTemplate="sampleContentBody" >
+        <h1>Hello df custom template</h1>
+      </ng-template>
+</app-comp-two>
+<div [formGroup]="group">
+
+    <input type="text" formControlName="searchValue">
+    <app-element formControlName="isLocked" (onValue)="getValue($event)"></app-element>
+</div> 
+<p>changed value {{changedValue()}}</p>
+<button (click)="submit()">Submit</button>
+
+<div *appCustomNgIf="true">Hello custom ng if directice</div>
+
+<signal-impl></signal-impl>
