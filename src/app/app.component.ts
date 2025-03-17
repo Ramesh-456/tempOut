@@ -102,7 +102,7 @@ export class AppComponent {
     }
   ]
   changeVal(){
-this.group.controls['hello'].patchValue(["Hello","ramesh"])
+this.group.controls['hello'].patchValue(["Hello","ramesh","how"])
 // console.log(this.hello.value);
 
   }
@@ -114,6 +114,6 @@ this.group.controls['hello'].patchValue(["Hello","ramesh"])
     // console.log(this.hello.value);
   }
 
-  currentDate = new Date();
+  // currentDate = new Date();
  
 }

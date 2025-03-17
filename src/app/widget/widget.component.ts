@@ -21,7 +21,7 @@ constructor(private widgetService:WidgetService) { }
 
   @ContentChild(WIDGET , {static:true}) widget!:Widget;
   ngOnInit(){
-    this.widget.load()
+    this.widget.load();
     this.widgetService.loadWidget();
   }
 }
