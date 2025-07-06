@@ -1,0 +1,8 @@
+Hello world
+<card [cardContent]="cardContent">
+    
+</card>
+<ng-template #cardContent let-data="data">
+    {{data}}
+    <card-content></card-content>
+</ng-template>

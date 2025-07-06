@@ -13,12 +13,18 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslatorService } from '../service/translator.service';
+import { ParentComponent } from '../parent/parent.component';
+import { CardComponent } from './Card.component';
+import { CardContentComponent } from './card-content/card-content.component';
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/child/', '.json');
 }
 @NgModule({
   declarations: [CustomDialogComponent,CustomDiaOneComponent,CustomDiaTwoComponent,
-    ValueAccComponent,SelectComponent
+    ValueAccComponent,SelectComponent,
+    ParentComponent,
+    CardComponent,
+    CardContentComponent
   ],
   imports: [
     
