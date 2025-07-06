@@ -1,0 +1,8 @@
+<p *ngIf="!cardService.cardClose">Card works start!</p>
+<div>
+<button (click)="cardService.cardClose = !cardService.cardClose">Click</button>
+</div>
+<ng-content></ng-content>
+<ng-container *ngTemplateOutlet="cardContent;context:{data:'data-object'}"></ng-container>
+
+<p  *ngIf="!cardService.cardClose">Card works end!</p> 
